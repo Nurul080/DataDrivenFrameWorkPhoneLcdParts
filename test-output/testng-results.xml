@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="5" failed="2" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-07T00:56:03 EST" name="DrataDriven Suite" finished-at="2023-12-07T00:56:40 EST" duration-ms="37029">
+    <groups>
+      <group name="Regression">
+        <method signature="LoginTest2.loginTest()[pri:0, instance:com.phonelcdparts.loginTest.LoginTest2@3eb738bb]" name="loginTest" class="com.phonelcdparts.loginTest.LoginTest2"/>
+        <method signature="LoginTest.loginTest2()[pri:1, instance:com.phonelcdparts.loginTest.LoginTest@229f66ed]" name="loginTest2" class="com.phonelcdparts.loginTest.LoginTest"/>
+        <method signature="RegistrationTest2.dupurRegistrationTest()[pri:0, instance:com.phonelcdparts.registrationTest.RegistrationTest2@6c40365c]" name="dupurRegistrationTest" class="com.phonelcdparts.registrationTest.RegistrationTest2"/>
+        <method signature="RegistrationTest.sokalRegistrationTest()[pri:1, instance:com.phonelcdparts.registrationTest.RegistrationTest@41a2befb]" name="sokalRegistrationTest" class="com.phonelcdparts.registrationTest.RegistrationTest"/>
+        <method signature="RegistrationTest.testSkiped()[pri:2, instance:com.phonelcdparts.registrationTest.RegistrationTest@41a2befb]" name="testSkiped" class="com.phonelcdparts.registrationTest.RegistrationTest"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="LoginTest.loginTest()[pri:0, instance:com.phonelcdparts.loginTest.LoginTest@229f66ed]" name="loginTest" class="com.phonelcdparts.loginTest.LoginTest"/>
+        <method signature="LoginTest2.loginTest()[pri:0, instance:com.phonelcdparts.loginTest.LoginTest2@3eb738bb]" name="loginTest" class="com.phonelcdparts.loginTest.LoginTest2"/>
+        <method signature="RegistrationTest.aloRegistrationTest()[pri:0, instance:com.phonelcdparts.registrationTest.RegistrationTest@41a2befb]" name="aloRegistrationTest" class="com.phonelcdparts.registrationTest.RegistrationTest"/>
+        <method signature="RegistrationTest2.bikelRegistrationTest()[pri:1, instance:com.phonelcdparts.registrationTest.RegistrationTest2@6c40365c]" name="bikelRegistrationTest" class="com.phonelcdparts.registrationTest.RegistrationTest2"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2023-12-07T00:56:03 EST" name="Loging Test" finished-at="2023-12-07T00:56:33 EST" duration-ms="29802">
+      <class name="com.phonelcdparts.loginTest.LoginTest">
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:com.phonelcdparts.loginTest.LoginTest@229f66ed]" started-at="2023-12-07T00:56:03 EST" name="openApplication" finished-at="2023-12-07T00:56:11 EST" duration-ms="7988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="loginTest()[pri:0, instance:com.phonelcdparts.loginTest.LoginTest@229f66ed]" started-at="2023-12-07T00:56:11 EST" name="loginTest" finished-at="2023-12-07T00:56:17 EST" duration-ms="5486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.phonelcdparts.loginTest.LoginTest@229f66ed]" started-at="2023-12-07T00:56:17 EST" name="closeApplication" finished-at="2023-12-07T00:56:17 EST" duration-ms="239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:com.phonelcdparts.loginTest.LoginTest@229f66ed]" started-at="2023-12-07T00:56:25 EST" name="openApplication" finished-at="2023-12-07T00:56:29 EST" duration-ms="3594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="loginTest2()[pri:1, instance:com.phonelcdparts.loginTest.LoginTest@229f66ed]" started-at="2023-12-07T00:56:29 EST" name="loginTest2" finished-at="2023-12-07T00:56:33 EST" duration-ms="4084" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Customer Login] but found [hello]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Customer Login] but found [hello]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at com.phonelcdparts.loginTest.LoginTest.loginTest2(LoginTest.java:62)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest2 -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.phonelcdparts.loginTest.LoginTest@229f66ed]" started-at="2023-12-07T00:56:33 EST" name="closeApplication" finished-at="2023-12-07T00:56:33 EST" duration-ms="205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.phonelcdparts.loginTest.LoginTest -->
+      <class name="com.phonelcdparts.loginTest.LoginTest2">
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:com.phonelcdparts.loginTest.LoginTest2@3eb738bb]" started-at="2023-12-07T00:56:17 EST" name="openApplication" finished-at="2023-12-07T00:56:21 EST" duration-ms="3802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="loginTest()[pri:0, instance:com.phonelcdparts.loginTest.LoginTest2@3eb738bb]" started-at="2023-12-07T00:56:21 EST" name="loginTest" finished-at="2023-12-07T00:56:25 EST" duration-ms="3928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.phonelcdparts.loginTest.LoginTest2@3eb738bb]" started-at="2023-12-07T00:56:25 EST" name="closeApplication" finished-at="2023-12-07T00:56:25 EST" duration-ms="425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.phonelcdparts.loginTest.LoginTest2 -->
+    </test> <!-- Loging Test -->
+    <test started-at="2023-12-07T00:56:03 EST" name="Registration Test" finished-at="2023-12-07T00:56:40 EST" duration-ms="37029">
+      <class name="com.phonelcdparts.registrationTest.RegistrationTest2">
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:com.phonelcdparts.registrationTest.RegistrationTest2@6c40365c]" started-at="2023-12-07T00:56:15 EST" name="openApplication" finished-at="2023-12-07T00:56:19 EST" duration-ms="3976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="dupurRegistrationTest()[pri:0, instance:com.phonelcdparts.registrationTest.RegistrationTest2@6c40365c]" started-at="2023-12-07T00:56:19 EST" name="dupurRegistrationTest" finished-at="2023-12-07T00:56:23 EST" duration-ms="3539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dupurRegistrationTest -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.phonelcdparts.registrationTest.RegistrationTest2@6c40365c]" started-at="2023-12-07T00:56:23 EST" name="closeApplication" finished-at="2023-12-07T00:56:23 EST" duration-ms="225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:com.phonelcdparts.registrationTest.RegistrationTest2@6c40365c]" started-at="2023-12-07T00:56:23 EST" name="openApplication" finished-at="2023-12-07T00:56:27 EST" duration-ms="3718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="bikelRegistrationTest()[pri:1, instance:com.phonelcdparts.registrationTest.RegistrationTest2@6c40365c]" started-at="2023-12-07T00:56:27 EST" name="bikelRegistrationTest" finished-at="2023-12-07T00:56:30 EST" duration-ms="3237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bikelRegistrationTest -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.phonelcdparts.registrationTest.RegistrationTest2@6c40365c]" started-at="2023-12-07T00:56:30 EST" name="closeApplication" finished-at="2023-12-07T00:56:30 EST" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.phonelcdparts.registrationTest.RegistrationTest2 -->
+      <class name="com.phonelcdparts.loginTest.LoginTest">
+        <test-method is-config="true" signature="startSuite()[pri:0, instance:com.phonelcdparts.loginTest.LoginTest@229f66ed]" started-at="2023-12-07T00:56:03 EST" name="startSuite" finished-at="2023-12-07T00:56:03 EST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startSuite -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.phonelcdparts.loginTest.LoginTest@229f66ed]" started-at="2023-12-07T00:56:40 EST" name="afterSuite" finished-at="2023-12-07T00:56:40 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.phonelcdparts.loginTest.LoginTest -->
+      <class name="com.phonelcdparts.registrationTest.RegistrationTest">
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:com.phonelcdparts.registrationTest.RegistrationTest@41a2befb]" started-at="2023-12-07T00:56:03 EST" name="openApplication" finished-at="2023-12-07T00:56:11 EST" duration-ms="7553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="aloRegistrationTest()[pri:0, instance:com.phonelcdparts.registrationTest.RegistrationTest@41a2befb]" started-at="2023-12-07T00:56:11 EST" name="aloRegistrationTest" finished-at="2023-12-07T00:56:15 EST" duration-ms="4269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aloRegistrationTest -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.phonelcdparts.registrationTest.RegistrationTest@41a2befb]" started-at="2023-12-07T00:56:15 EST" name="closeApplication" finished-at="2023-12-07T00:56:15 EST" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:com.phonelcdparts.registrationTest.RegistrationTest@41a2befb]" started-at="2023-12-07T00:56:30 EST" name="openApplication" finished-at="2023-12-07T00:56:34 EST" duration-ms="3480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="sokalRegistrationTest()[pri:1, instance:com.phonelcdparts.registrationTest.RegistrationTest@41a2befb]" started-at="2023-12-07T00:56:34 EST" name="sokalRegistrationTest" finished-at="2023-12-07T00:56:36 EST" duration-ms="2723" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Create New Customer Account] but found [hello]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Create New Customer Account] but found [hello]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at com.phonelcdparts.registrationTest.RegistrationTest.sokalRegistrationTest(RegistrationTest.java:53)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sokalRegistrationTest -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.phonelcdparts.registrationTest.RegistrationTest@41a2befb]" started-at="2023-12-07T00:56:36 EST" name="closeApplication" finished-at="2023-12-07T00:56:37 EST" duration-ms="251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:com.phonelcdparts.registrationTest.RegistrationTest@41a2befb]" started-at="2023-12-07T00:56:37 EST" name="openApplication" finished-at="2023-12-07T00:56:40 EST" duration-ms="3307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="testSkiped()[pri:2, instance:com.phonelcdparts.registrationTest.RegistrationTest@41a2befb]" started-at="2023-12-07T00:56:40 EST" name="testSkiped" finished-at="2023-12-07T00:56:40 EST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping this exception]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping this exception
+at com.phonelcdparts.registrationTest.RegistrationTest.testSkiped(RegistrationTest.java:58)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSkiped -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.phonelcdparts.registrationTest.RegistrationTest@41a2befb]" started-at="2023-12-07T00:56:40 EST" name="closeApplication" finished-at="2023-12-07T00:56:40 EST" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.phonelcdparts.registrationTest.RegistrationTest -->
+    </test> <!-- Registration Test -->
+  </suite> <!-- DrataDriven Suite -->
+</testng-results>

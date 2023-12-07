@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [DrataDriven Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Loging Test(failed)">
+    <classes>
+      <class name="com.phonelcdparts.loginTest.LoginTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="closeApplication"/>
+          <include name="startSuite"/>
+          <include name="loginTest2"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- com.phonelcdparts.loginTest.LoginTest -->
+    </classes>
+  </test> <!-- Loging Test(failed) -->
+  <test thread-count="2" parallel="tests" name="Registration Test(failed)">
+    <classes>
+      <class name="com.phonelcdparts.registrationTest.RegistrationTest">
+        <methods>
+          <include name="testSkiped"/>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="sokalRegistrationTest"/>
+        </methods>
+      </class> <!-- com.phonelcdparts.registrationTest.RegistrationTest -->
+    </classes>
+  </test> <!-- Registration Test(failed) -->
+</suite> <!-- Failed suite [DrataDriven Suite] -->

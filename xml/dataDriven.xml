@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="DrataDriven Suite">
+	
+	<test name="Loging Test">
+		<classes>
+			<class name="com.phonelcdparts.loginTest.LoginTest" />
+			<class name="com.phonelcdparts.loginTest.LoginTest2" />
+		</classes>
+	</test>
+
+	<test name="Registration Test">
+		<classes>
+			<class name="com.phonelcdparts.registrationTest.RegistrationTest" />
+			<class name="com.phonelcdparts.registrationTest.RegistrationTest2" />
+
+		</classes>
+	</test>
+
+
+</suite> 

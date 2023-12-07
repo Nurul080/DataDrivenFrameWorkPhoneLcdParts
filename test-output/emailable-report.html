@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">DrataDriven Suite</th></tr>
+<tr><td><a href="#t0">Loging Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">29,802</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Registration Test</a></td><td class="num">3</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">37,029</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">5</th><th class="num attn">1</th><th class="num">0</th><th class="num attn">2</th><th class="num">66,831</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">DrataDriven Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Loging Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.phonelcdparts.loginTest.LoginTest</td><td><a href="#m0">loginTest2</a></td><td rowspan="1">1701928589122</td><td rowspan="1">4084</td></tr><tr><th colspan="4">Loging Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.phonelcdparts.loginTest.LoginTest</td><td><a href="#m1">loginTest</a></td><td rowspan="1">1701928571641</td><td rowspan="1">5486</td></tr><tr class="passedodd"><td rowspan="1">com.phonelcdparts.loginTest.LoginTest2</td><td><a href="#m2">loginTest</a></td><td rowspan="1">1701928581173</td><td rowspan="1">3928</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Registration Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.phonelcdparts.registrationTest.RegistrationTest</td><td><a href="#m3">sokalRegistrationTest</a></td><td rowspan="1">1701928594160</td><td rowspan="1">2723</td></tr><tr><th colspan="4">Registration Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.phonelcdparts.registrationTest.RegistrationTest</td><td><a href="#m4">testSkiped</a></td><td rowspan="1">1701928600444</td><td rowspan="1">0</td></tr><tr><th colspan="4">Registration Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.phonelcdparts.registrationTest.RegistrationTest</td><td><a href="#m5">aloRegistrationTest</a></td><td rowspan="1">1701928571206</td><td rowspan="1">4269</td></tr><tr class="passedodd"><td rowspan="2">com.phonelcdparts.registrationTest.RegistrationTest2</td><td><a href="#m6">bikelRegistrationTest</a></td><td rowspan="1">1701928587201</td><td rowspan="1">3237</td></tr><tr class="passedodd"><td><a href="#m7">dupurRegistrationTest</a></td><td rowspan="1">1701928579717</td><td rowspan="1">3539</td></tr></tbody>
+</table>
+<h2>Loging Test</h2><h3 id="m0">com.phonelcdparts.loginTest.LoginTest#loginTest2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Customer Login] but found [hello]
+	at com.phonelcdparts.loginTest.LoginTest.loginTest2(LoginTest.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.phonelcdparts.loginTest.LoginTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.phonelcdparts.loginTest.LoginTest2#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Registration Test</h2><h3 id="m3">com.phonelcdparts.registrationTest.RegistrationTest#sokalRegistrationTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Create New Customer Account] but found [hello]
+	at com.phonelcdparts.registrationTest.RegistrationTest.sokalRegistrationTest(RegistrationTest.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.phonelcdparts.registrationTest.RegistrationTest#testSkiped</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Skipping this exception
+	at com.phonelcdparts.registrationTest.RegistrationTest.testSkiped(RegistrationTest.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.phonelcdparts.registrationTest.RegistrationTest#aloRegistrationTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.phonelcdparts.registrationTest.RegistrationTest2#bikelRegistrationTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.phonelcdparts.registrationTest.RegistrationTest2#dupurRegistrationTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
